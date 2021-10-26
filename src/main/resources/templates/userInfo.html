@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>个人信息页</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+  body {
+    background-image: url("../img/bgimage1.jpg");
+  }
+</style>
+<body>
+<div>
+  <table class="table table-stripe" style="border: 1px">
+    <h2>个人信息表</h2>
+    <thead>
+    <th>用户名</th>
+    <th>性别</th>
+    <th>生日</th>
+    <th>QQ</th>
+    <th>自我介绍</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td><label th:text="${Username}"></label></td>
+      <td><label th:text="${Sex}"/></td>
+      <td><label th:text="${Birthday}"/></td>
+      <td><label th:text="${QQ}"/></td>
+      <td><label th:text="${Myself}"/></td>
+    </tr>
+    </tbody>
+  </table>
+  <div style="alignment: center">
+    <a href="/userBack">返回</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SpringDemoApplication
+  datasource:
+    url: jdbc:mysql://localhost:3306/intellimanagesystem
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+  mvc:
+    static-path-pattern: /**
+mybatis:
+  type-aliases-package: com.demo.mapper
+server:
+  port: 8088
